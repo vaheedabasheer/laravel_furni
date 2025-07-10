@@ -1,4 +1,4 @@
-      @extends('front_end.layouts.app')
+      @extends('front_end.staff.staff_header')
       @section('content')
       <!-- Start Hero Section -->
 			<div class="hero">

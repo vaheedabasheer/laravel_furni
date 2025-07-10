@@ -26,7 +26,9 @@
 				</div>
 			</div>
 		<!-- End Hero Section -->
-     <br><br><br>
+     <br><br>
+     <center><h3 style="color:green";>All Registrations</h3></center>
+     <br>
         <form action="">
         <table class="table table-success table-striped">
 
@@ -53,13 +55,16 @@
    <td>{{$user->type}}</td>
   <td colspan="2">
     <a href="">Edit/</a>
-    <a href="">Delete</a>
+    <a href="{{route('admin.delete',encrypt($user->rid))}}">Delete</a>
+   
   </td>
     </tr>
     @endforeach
   </tbody>
 </table>
-
+<div>
+  {{$users->links()}}
+</div>
     </form>
 <br><br><br><br><br>
 

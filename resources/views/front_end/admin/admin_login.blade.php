@@ -14,7 +14,7 @@
 						</div>
 						<div class="col-lg-7">
 							<div class="hero-img-wrap">
-								<img src="images/couch.png" class="img-fluid">
+								<img src="{{asset('images/couch.png')}}" class="img-fluid">
 							</div>
 						</div>
 					</div>
@@ -30,7 +30,7 @@
 						<h2 class="section-title">Login/Register</h2>
                         <div class="row my-5">
 							<div class="col-6 col-md-6">
-					<form action="{{route('do.login')}}" method="post">
+					<form action="{{route('do.adminLogin')}}" method="post">
 						@csrf
                         <table>
 							@if(session('success'))
@@ -63,17 +63,16 @@
                                 </div>
                             </tr>
     				        <tr>
-                                 <div class="form-group">
+                                 <!-- <div class="form-group">
                                 <td>Catagory</td>
                             </div>
                             	<div class="col-6 col-md-6">
-                                    <td><br>
-										<select name="type" id="" class="form-control">
+                                    <td><br> -->
+										<!-- <select name="type" id="" class="form-control">
 											<option value="">Select Catagory</option>
 											<option value="admin">Admin</option>
-											<option value="staff">Staff</option>
-											<option value="customer">Customer</option>
-										</select>
+										
+										</select> -->
 									</td>
                                 </div>
 							</div>
@@ -93,14 +92,14 @@
 </div>
 
 
-						<p><br><center>New User? <a href="{{route('register')}}" style="color:red";>Register Now</center></a></p>
+						<p><br><center>New User? <a href="{{route('admin.registration')}}" style="color:red";>Register Now</center></a></p>
 
 						</div>
 					</div>
 
 					<div class="col-lg-5">
 						<div class="img-wrap">
-							<img src="images/why-choose-us-img.jpg" alt="Image" class="img-fluid">
+							<img src="{{asset('images/why-choose-us-img.jpg')}}" alt="Image" class="img-fluid">
 						</div>
 					</div>
 

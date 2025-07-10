@@ -13,7 +13,7 @@
 						</div>
 						<div class="col-lg-7">
 							<div class="hero-img-wrap">
-								<img src="images/couch.png" class="img-fluid">
+								<img src="{{asset('images/couch.png')}}" class="img-fluid">
 							</div>
 						</div>
 					</div>
@@ -73,8 +73,8 @@
                   </div> <!-- /.service -->
                 </div>
               </div>
-
-              <form action="{{route('save')}}" method="post">
+                <center><h5 style="color:green">Already Registered User? <a href="{{route('admin.login')}}" style="color:red">Login Now</a></h5></center>
+              <form action="{{route('admin.save')}}" method="post">
                 @csrf
                 @if($errors->any())
                 <div class="alert alert-danger">
@@ -138,8 +138,7 @@
                   <select name="type" id="type" class="form-control" >
                         <option value="">Select Catagory Type</option>
                         <option value="admin">Admin</option>
-                        <option value="staff">Staff</option>
-                        <option value="customer">Customer</option>
+                     
                   </select>
                      @error('type')
                       <small class="text-danger">{{$message}}</small>

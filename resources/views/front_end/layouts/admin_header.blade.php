@@ -45,7 +45,7 @@
 							<a class="nav-link" href="{{route('admin')}}">Home</a>
 						</li>
 						<li><a class="nav-link" href="{{route('admin.viewReg')}}">View Registration</a></li>
-						<li><a class="nav-link" href="about.html">About us</a></li>
+						<li><a class="nav-link" href="#">Team</a></li>
 						<li><a class="nav-link" href="services.html">Services</a></li>
 						<li><a class="nav-link" href="blog.html">Blog</a></li>
 						<li><a class="nav-link" href="contact.html">Contact us</a></li>
@@ -59,7 +59,7 @@
   </button>
   <ul class="dropdown-menu">
     
-	    <li><a class="dropdown-item" href="{{route('logout')}}">Log Out</a></li>
+	    <li><a class="dropdown-item" href="{{route('admin.logout')}}">Log Out</a></li>
  
   </ul>
 </div>
